@@ -12,8 +12,8 @@
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: #64a19d;
-  border: 1px solid #64a19d;
+  color: #d60f67;
+  border: 1px solid #d60f67;
 }
 
 #mainNav .navbar-toggler:focus {
@@ -66,7 +66,7 @@
     background-color: #fff;
   }
   #mainNav.navbar-shrink .navbar-brand {
-    color: #161616;
+    color: #d60f67;
   }
   #mainNav.navbar-shrink .nav-link {
     color: #161616;
@@ -74,15 +74,15 @@
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
-    color: #64a19d;
+    color: #d60f67;
   }
   #mainNav.navbar-shrink .nav-link:active {
     color: #467370;
   }
   #mainNav.navbar-shrink .nav-link.active {
-    color: #64a19d;
+    color: #d60f67;
     outline: none;
-    border-bottom: 0.25rem solid #64a19d;
+    border-bottom: 0.25rem solid #d60f67;
   }
 }
 
@@ -93,7 +93,7 @@
   min-height: 35rem;
   padding: 15rem 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.3)), color-stop(75%, rgba(22, 22, 22, 0.7)), to(#161616)), url("../img/bg-masthead.jpg");
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(80, 20, 45, 0.3) 0%, rgba(80, 20, 45, 0.7) 75%, #161616 100%), url("../img/bg-masthead.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -150,15 +150,15 @@
 }
 
 .btn-primary {
-  background-color: #64a19d;
+  background-color: #d60f67;
 }
 
 .btn-primary:hover {
-  background-color: #4f837f;
+  background-color: #87214f;
 }
 
 .btn-primary:focus {
-  background-color: #4f837f;
+  background-color: #87214f;
   color: white;
 }
 
@@ -187,7 +187,7 @@
 @media (min-width: 992px) {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #64a19d;
+    border-left: 0.5rem solid #d60f67;
   }
 }
 
@@ -201,7 +201,7 @@
     padding: 5rem;
   }
   .projects-section .project-text hr {
-    border-color: #64a19d;
+    border-color: #d60f67;
     border-width: .25rem;
     width: 30%;
   }
@@ -235,7 +235,7 @@
 
 .contact-section .card {
   border: 0;
-  border-bottom: 0.25rem solid #64a19d;
+  border-bottom: 0.25rem solid #d60f67;
 }
 
 .contact-section .card h4 {
@@ -246,7 +246,7 @@
 }
 
 .contact-section .card hr {
-  border-color: #64a19d;
+  border-color: #d60f67;
   border-width: 0.25rem;
   width: 3rem;
 }
@@ -279,12 +279,12 @@ body {
 }
 
 a {
-  color: #64a19d;
+  color: #d60f67;
 }
 
 a:focus, a:hover {
   text-decoration: none;
-  color: #3c6360;
+  color: #87214f;
 }
 
 .bg-black {
@@ -292,11 +292,11 @@ a:focus, a:hover {
 }
 
 .bg-primary {
-  background-color: #64a19d !important;
+  background-color: #d60f67 !important;
 }
 
 .text-primary {
-  color: #64a19d !important;
+  color: #d60f67 !important;
 }
 
 footer {
