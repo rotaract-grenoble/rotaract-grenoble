@@ -37,7 +37,7 @@
   background-color: transparent;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 0px) {
   #mainNav {
     padding-top: 0;
     padding-bottom: 0;
@@ -47,7 +47,7 @@
     transition: background-color 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
-    padding: .5rem 0;
+    padding: 1.5rem 0;
     color: rgba(255, 255, 255, 0.5);
   }
   #mainNav .nav-link {
@@ -110,7 +110,7 @@
   font-family: 'Varela Round';
   font-size: 2.5rem;
   line-height: 2.5rem;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.25rem;
   background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -121,7 +121,7 @@
   font-size: 1rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   .masthead h1 {
     font-size: 4rem;
     line-height: 4rem;
@@ -169,7 +169,7 @@
 }
 
 .btn-primary:active {
-  background-color: #467370 !important;
+  background-color: #4f122d !important;
 }
 
 .about-section {
