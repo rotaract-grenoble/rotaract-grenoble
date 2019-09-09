@@ -65,7 +65,7 @@
     <div class="container d-flex h-100 align-items-center">
       <div class="mx-auto text-center">
         <h1 class="my-0 text-uppercase">BE A LEADER</h1>
-        <h2 class="text-white-50 mx-auto mt-2 mb-5">Aidez la communauté. Développez vos compétences. Élargissez votre réseau.</h2>
+        <h2 class="text-white-50 mx-auto mt-2 mb-5">Aidez la communauté<br/>Développez vos compétences<br/>Élargissez votre réseau</h2>
         <a href="#about" class="btn btn-primary js-scroll-trigger">Soyez un Leader</a>
       </div>
     </div>
@@ -77,7 +77,7 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2 class="text-white mb-4">Un club fait par vous</h2>
-          <p class="text-white-50">Rotaract est membre de la famille Rotary International, le réseau global de leaders qui ensembles  </p>
+          <p class="text-white-50">Rotaract clubs sont partout dans le monde. Ils intégrent le Rotary International, le réseau global de leaders qui travaillent ensemble pour le bien des communautés locales, de l'environment, et des personnes ayant besoin d'aide. Ce réseau de professionels et jeunes </p>
         </div>
       </div>
       <img src="img/earth.png" class="img-fluid" alt="">
@@ -140,32 +140,13 @@
     </div>
   </section>
 
-  <!-- Signup Section -->
-  <section id="signup" class="signup-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10 col-lg-8 mx-auto text-center">
-
-          <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-          <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
-
-          <form class="form-inline d-flex">
-            <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
-            <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
-          </form>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Contact Section -->
   <section class="contact-section bg-black">
     <div class="container">
 
       <div class="row">
         <div class="col-md-4 mb-3 mb-md-0">
-          
+
           <a href="mailto:contact@rotaract-grenoble.fr">
             <div class="card py-4 h-100">
               <div class="card-body text-center">
@@ -190,7 +171,7 @@
             </div>
           </a>
         </div>
-        
+
         <div class="col-md-4 mb-3 mb-md-0">
           <a target="_blank" href="https://instagram.com/Rotaract.Grenoble">
             <div class="card py-4 h-100">
@@ -203,27 +184,59 @@
             </div>
           </a>
         </div>
-        
-      </div>
 
-      <div class="social d-flex justify-content-center small text-white-50">
-        Accès pour les membres aux services internes du club :
-        <br/>
-        <a href="https://trello.com/login" class="mx-2">
-          <i class="fab fa-trello"></i>
-        </a>
-        <a href="https://contacts.google.com" class="mx-2">
-          <i class="fas fa-address-book"></i>
-        </a>
       </div>
 
     </div>
   </section>
 
+
+  <!-- Signup Section -->
+  <!-- <section id="signup" class="signup-section bg-black" style="">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-lg-6 mx-auto my-auto text-center">
+
+          <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+          <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+
+          <form class="form-inline d-flex">
+            <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
+            <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </section> -->
+
   <!-- Footer -->
   <footer class="bg-black small text-center text-white-50">
     <div class="container">
-      Copyright &copy; Rotaract Club de Grenoble Dauphiné
+      <div class="row">
+        <div class="col-lg-8 mx-auto justify-content-center social">
+            Accès :
+            <a href="https://trello.com/b/tnA4xEwG/rac-gre-portail" target="_blank" class="mx-2 text-white-50">
+              <i class="fab fa-trello"></i>
+              Portail
+            </a>
+            <a href="#calendar" onclick="$('#calendar').toggle(500);" class="mx-2 text-white-50" >
+              <i class="far fa-calendar-alt"></i>
+              Calendrier
+            </a>
+            <br/>
+            <br/>
+            <iframe id="calendar"
+    src="https://open-web-calendar.herokuapp.com/calendar.html?url=https%3A%2F%2Ftrello.com%2Fcalendar%2F573acc782bd096f024d677fc%2F5c5c01ea6c379c05234c6c6d%2F2aca0d3c07748a49d12672e88f74bf1a.ics&amp;language=fr&amp;skin=dhtmlxscheduler_contrast_black.css&amp;css=font-size%3A%20small%3B&amp;target=_blank"
+    sandbox="allow-scripts allow-same-origin"
+    allowTransparency="true" scrolling="no"
+    frameborder="0" height="400px" width="100%"></iframe>
+            <!-- <iframe id="calendar" src="https://calendar.google.com/calendar/b/2/embed?height=400&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FParis&amp;src=NWg0ODN2bDlqa2Y2c2IzN2EwMjhhbHVlcXZsbWZyaDBAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23D81B60&amp;mode=MONTH&amp;showNav=1&amp;showDate=1&amp;showPrint=0&amp;showTabs=1&amp;showCalendars=0" style="border-width:0; display:none" width="100%" height="400" frameborder="0" scrolling="no"></iframe> -->
+            <br/>
+            <br/>
+            Copyright &copy; Rotaract Club de Grenoble Dauphiné
+        </div>
+      </div>
     </div>
   </footer>
 
