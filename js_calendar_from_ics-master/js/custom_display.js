@@ -1,8 +1,12 @@
 // Edit your ics sources here
 ics_sources = [
     //{url:'https://sogo.nomagic.uk/SOGo/dav/public/contact/Calendar/3D08-5CC47000-1-5EA59B00.ics', title:'Nomagic Calendar', event_properties:{color: 'SeaGreen'}},
-    {url:'https://www.calendarlabs.com/ical-calendar/ics/75/UK_Holidays.ics', title: 'UKKK Bank Holidays in England and Wales', event_properties: {color: 'DodgerBlue'}}
+    //{url:'https://www.calendarlabs.com/ical-calendar/ics/75/UK_Holidays.ics', title: 'UKKK Bank Holidays in England and Wales', event_properties: {color: 'DodgerBlue'}},
     //{url:'https://trello.com/calendar/573acc782bd096f024d677fc/5c5c01ea6c379c05234c6c6d/2aca0d3c07748a49d12672e88f74bf1a.ics', title: 'RAC GRE | Cal', event_properties: {color: 'DodgerBlue'}}
+    {url:'events.ics',event_properties:{color:'gold'}},
+    {url:'events-noend.ics',event_properties:{color:'pink'}},
+    {url:'32c3.ics'},
+    {url:'daily_recur.ics',event_properties:{className:['daily-recur'], url:'http://recurring.events.example.org/'}}
 ]
 
 
