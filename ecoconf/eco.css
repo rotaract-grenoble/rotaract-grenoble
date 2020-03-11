@@ -98,8 +98,7 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(80, 20, 45, 0.3)), color-stop(75%, rgba(80, 20, 45, 0.7)), to(#50142d)), url("eco.jpg");
-  background: linear-gradient(to bottom, rgba(80, 20, 45, 0.5) 0%, rgba(80, 20, 45, 0.7) 75%, #50142d 100%), url("eco.jpg");
+  background: linear-gradient(to bottom, rgba(21, 97, 19, 0.7) 0%, rgba(20, 80, 33, 0.1) 50%, rgb(12, 42, 11) 100%), url("eco.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
