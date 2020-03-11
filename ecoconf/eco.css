@@ -116,6 +116,16 @@
   -webkit-background-clip: text;
 }
 
+.masthead h3 {
+  font-family: 'Varela Round';
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.25rem;
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
 .masthead h2 {
   max-width: 20rem;
   font-size: 1rem;
@@ -125,6 +135,11 @@
   .masthead h1 {
     font-size: 4rem;
     line-height: 4rem;
+  }
+  
+  .masthead h2 {
+    font-size: 3rem;
+    line-height: 3rem;
   }
 }
 
@@ -136,6 +151,11 @@
   .masthead h1 {
     font-size: 6.5rem;
     line-height: 6.5rem;
+    letter-spacing: 0.8rem;
+  }
+  .masthead h3 {
+    font-size: 4rem;
+    line-height: 4rem;
     letter-spacing: 0.8rem;
   }
   .masthead h2 {
