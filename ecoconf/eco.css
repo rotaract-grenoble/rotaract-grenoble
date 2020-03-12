@@ -126,12 +126,14 @@
 }
 
 .masthead h2 {
+  font-weight: 600;
   max-width: 20rem;
   font-size: 1rem;
 }
 
-.masthead h2:hover > #location {
-  opacity: 0.9;
+h2:hover #location {
+  opacity: 0.9 !important;
+  font-weight: normal !important;
 }
 
 @media (min-width: 600px) {
