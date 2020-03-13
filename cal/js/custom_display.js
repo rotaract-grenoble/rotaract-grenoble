@@ -1,7 +1,7 @@
 // Edit your ics sources here
 ics_sources = [
     {url:'https://sogo.nomagic.uk/SOGo/dav/public/contact/Calendar/3D08-5CC47000-1-5EA59B00.ics', title:'Nomagic Calendar', event_properties:{color: 'SeaGreen'}},
-    {url:'https://trello.com/calendar/573acc782bd096f024d677fc/5c5c01ea6c379c05234c6c6d/2aca0d3c07748a49d12672e88f74bf1a.ics', title: RAC GRE', event_properties: {color: 'DodgerBlue'}}
+    //{url:'https://trello.com/calendar/573acc782bd096f024d677fc/5c5c01ea6c379c05234c6c6d/2aca0d3c07748a49d12672e88f74bf1a.ics', title: RAC GRE', event_properties: {color: 'DodgerBlue'}}
 ]
 
 
