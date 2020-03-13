@@ -107,6 +107,22 @@
   <section id="projects" class="projects-section bg-light">
     <div class="container">
 
+      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+        <div class="col-lg-6">
+          <div class="featured-text text-center text-lg-left">
+            <h4><a href="/cal">Notre Calendrier</a></h4>
+            <p class="text-black mb-2">Vous êtes toujours les bienvenus!</p>
+            <p class="text-black mb-0"></p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <iframe src="/cal"
+              sandbox="allow-scripts allow-same-origin"
+              allowTransparency="true" frameborder="0" height="350px" width="100%">
+          </iframe>
+        </div>
+      </div>
+
       <!-- Featured Project Row -->
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
         <div class="col-xl-8 col-lg-7">
@@ -238,39 +254,31 @@
       <div class="row">
         <div class="col-lg-12 mx-auto justify-content-center social">
             Accès :
+            <br class="d-block d-sm-none"/>
             <a href="https://trello.com/b/tnA4xEwG/rac-gre-portail" target="_blank" class="mx-2 text-white-50">
               <i class="fab fa-trello"></i>
-              Portail (membres)
+              Portail (privé)
             </a>
-            <a href="#calendar" onclick="$('#calendar').toggle(500);" class="mx-2 text-white-50" >
+            <br class="d-block d-sm-none"/>
+            <a href="#calendar" onclick="$('#calendar').toggle();" class="mx-2 text-white-50" >
               <i class="far fa-calendar-alt"></i>
               Calendrier
             </a>
+            <br class="d-block d-sm-none"/>
+            <a href="http://id.rotaract-grenoble.fr" target="_blank" class="mx-2 text-white-50">
+              <i class="fa fa-address-card"></i>
+              ID Form
+            </a>
             <br/>
             <br/>
-            <span id="calendar" style="display: none;">
-                <a target="_blank" href="https://open-web-calendar.herokuapp.com/calendar.html?url=https%3A%2F%2Ftrello.com%2Fcalendar%2F573acc782bd096f024d677fc%2F5c5c01ea6c379c05234c6c6d%2F2aca0d3c07748a49d12672e88f74bf1a.ics&amp;language=fr&amp;skin=dhtmlxscheduler_contrast_black.css&amp;css=font-size%3A%20small%3B&amp;target=_blank" class="mx-2" >
-                    <i class="fas fa-external-link-alt"></i>
-                    Ouvrir dans un nouvel onglet
-                </a>
-                <br/><br/>
-                <iframe src="https://open-web-calendar.herokuapp.com/calendar.html?url=https%3A%2F%2Ftrello.com%2Fcalendar%2F573acc782bd096f024d677fc%2F5c5c01ea6c379c05234c6c6d%2F2aca0d3c07748a49d12672e88f74bf1a.ics&amp;language=fr&amp;skin=dhtmlxscheduler_contrast_black.css&amp;css=font-size%3A%20small%3B&amp;target=_blank"
-                    sandbox="allow-scripts allow-same-origin"
-                    allowTransparency="true" scrolling="no"
-                    frameborder="0" height="500px" width="100%">
-                </iframe>
-                <br/><br/>
-                <div class="md-form">
-                    <i class="fas fa-rss prefix"></i>
-                    Lien d'abonnement :
-                    <input type="text" class="form-control-sm col-lg-10 mx-auto bg-black text-white" value="https://trello.com/calendar/573acc782bd096f024d677fc/5c5c01ea6c379c05234c6c6d/2aca0d3c07748a49d12672e88f74bf1a.ics">
-                </div>
-                </a>
+            <span id="calendar" style="display: none; word-wrap: break-word;">
+              <i class="fas fa-rss prefix"></i>
+              Lien d'abonnement :
+              https://trello.com/calendar/573acc782bd096f024d677fc/5c5c01ea6c379c05234c6c6d/2aca0d3c07748a49d12672e88f74bf1a.ics
             </span>
-            <!-- <iframe id="calendar" src="https://calendar.google.com/calendar/b/2/embed?height=400&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FParis&amp;src=NWg0ODN2bDlqa2Y2c2IzN2EwMjhhbHVlcXZsbWZyaDBAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23D81B60&amp;mode=MONTH&amp;showNav=1&amp;showDate=1&amp;showPrint=0&amp;showTabs=1&amp;showCalendars=0" style="border-width:0; display:none" width="100%" height="400" frameborder="0" scrolling="no"></iframe> -->
             <br/>
             <br/>
-            Copyright &copy; Rotaract Grenoble-Dauphiné
+            Copyright &copy; <br class="d-block d-sm-none"/>Rotaract Grenoble-Dauphiné
         </div>
       </div>
     </div>
