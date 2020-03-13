@@ -57,9 +57,9 @@ $(document).ready(function() {
     // display events
     $('#calendar').fullCalendar({
         header: {
-            left: 'prev next today',
+            left: 'prev next',
             center: 'title',
-            right: ''//'month,agendaWeek,agendaDay,listWeek,listMonth'
+            right: 'today listMonth'//'month,agendaWeek,agendaDay,listWeek,listMonth'
         },
         defaultView: 'listMonth',
         firstDay: '1',
@@ -69,20 +69,21 @@ $(document).ready(function() {
         // customize the button names,
         // otherwise they'd all just say "list"
         views: {
-          listWeek: { buttonText: 'W' },
-          listMonth: { buttonText: 'M' }
+          listWeek: { buttonText: 'Week' },
+          listMonth: { buttonText: 'Calendrier' }
         },
 	navLinks: true,
 	editable: false,
         eventLimit: false, // allow "more" link when too many events
         eventRender: function(event, element, view) {
-	  if(view.name == "listMonth" || view.name == "listWeek") {
+	  //if(view.name == "listMonth" || view.name == "listWeek") {
+            view.name = "listWeek";
             var title = element.find('.fc-list-item-title');
             /*title.append('<div style="margin-top:5px;"></div><span style="font-size: 0.9em">'+(event.description || 'no description')+'</span>'+((event.loc) ? ('<span style="margin-top:5px;display: block"><b>Venue: </b>'+event.loc+'</span>') : ' ')+'</div>');*/
             var text = title.text().replace(new RegExp(" \\[.+?\\]$"), "");
             title.html("");
             title.html(text);
-	  } else if(view.name == "agendaWeek" || view.name == "agendaDay") {
+	  /*} else if(view.name == "agendaWeek" || view.name == "agendaDay") {
             element.qtip({
                 content: {
                   text: '<small>'+((event.start.format("d") != event.end.format("d")) ? (event.start.format("MMM Do")
@@ -120,7 +121,7 @@ $(document).ready(function() {
                     at: 'bottom center',
                 }
             });
-          }
+          }*/
         }
     })
     sources_to_load_cnt = ics_sources.length

@@ -3,8 +3,8 @@ body {
   font-size: 12px;
   max-width: 900px;
   margin: 0 auto 2em;
-  background-color: #333;
-  color: ghostwhite;
+  background-color: #f8f9fa;
+  /* color: ghostwhite; */
 }
 .calendar-feed {
   margin: 10px 8px 10px 8px;;
@@ -35,7 +35,10 @@ h1 {
 }
 
 .fc-list-heading td, .fc-list-empty {
-  background-color: #000 !important;
+  background-color: #e59ebd !important;
+}
+.fc-scroller {
+  height: 100% !important;
 }
 
 .box-tip {
