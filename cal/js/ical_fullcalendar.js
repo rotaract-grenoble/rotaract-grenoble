@@ -73,8 +73,7 @@ function fc_event(event, event_callback) {
     try {
         e['end'] = event.getFirstPropertyValue('dtend').toJSDate()
     } catch (TypeError) {
-        e['allDay'] = true
+        //e['allDay'] = true
     }
     event_callback(e)
 }
-

@@ -1,7 +1,6 @@
 // Edit your ics sources here
 ics_sources = [
-    {url:'https://sogo.nomagic.uk/SOGo/dav/public/contact/Calendar/3D08-5CC47000-1-5EA59B00.ics', title:'Nomagic Calendar', event_properties:{color: 'SeaGreen'}},
-    //{url:'https://trello.com/calendar/573acc782bd096f024d677fc/5c5c01ea6c379c05234c6c6d/2aca0d3c07748a49d12672e88f74bf1a.ics', title: RAC GRE', event_properties: {color: 'DodgerBlue'}}
+    {url:'https://trello.com/calendar/573acc782bd096f024d677fc/5c5c01ea6c379c05234c6c6d/2aca0d3c07748a49d12672e88f74bf1a.ics', title: 'Rotaract Grenoble-Dauphiné', event_properties: {color: '#D91B5C'}}
 ]
 
 
@@ -12,10 +11,16 @@ ics_sources = [
 ////////////////////////////////////////////////////////////////////////////
 
 function data_req (url, callback) {
-    req = new XMLHttpRequest()
+    /*req = new XMLHttpRequest()
     req.addEventListener('load', callback)
     req.open('GET', url)
-    req.send()
+    req.send()*/
+
+    var cors_api_url = 'https://cors-anywhere.herokuapp.com/';
+    var x = new XMLHttpRequest();
+    x.open("GET", cors_api_url + url);
+    x.onload = x.onerror = callback;
+    x.send();
 }
 
 function add_recur_events() {
@@ -52,27 +57,31 @@ $(document).ready(function() {
     // display events
     $('#calendar').fullCalendar({
         header: {
-            left: 'prev,next today',
+            left: 'prev next today',
             center: 'title',
-            right: 'month,agendaWeek,agendaDay,listWeek,listMonth'
+            right: ''//'month,agendaWeek,agendaDay,listWeek,listMonth'
         },
-        defaultView: 'month',
+        defaultView: 'listMonth',
         firstDay: '1',
-        locale: 'en',
-        lang: 'en',
+        locale: 'fr',
+        lang: 'fr',
 
         // customize the button names,
         // otherwise they'd all just say "list"
         views: {
-          listWeek: { buttonText: 'list week' },
-          listMonth: { buttonText: 'list month' }
+          listWeek: { buttonText: 'W' },
+          listMonth: { buttonText: 'M' }
         },
 	navLinks: true,
 	editable: false,
-        eventLimit: true, // allow "more" link when too many events
+        eventLimit: false, // allow "more" link when too many events
         eventRender: function(event, element, view) {
 	  if(view.name == "listMonth" || view.name == "listWeek") {
-            element.find('.fc-list-item-title').append('<div style="margin-top:5px;"></div><span style="font-size: 0.9em">'+(event.description || 'no description')+'</span>'+((event.loc) ? ('<span style="margin-top:5px;display: block"><b>Venue: </b>'+event.loc+'</span>') : ' ')+'</div>');
+            var title = element.find('.fc-list-item-title');
+            /*title.append('<div style="margin-top:5px;"></div><span style="font-size: 0.9em">'+(event.description || 'no description')+'</span>'+((event.loc) ? ('<span style="margin-top:5px;display: block"><b>Venue: </b>'+event.loc+'</span>') : ' ')+'</div>');*/
+            var text = title.text().replace(new RegExp(" \\[.+?\\]$"), "");
+            title.html("");
+            title.html(text);
 	  } else if(view.name == "agendaWeek" || view.name == "agendaDay") {
             element.qtip({
                 content: {
