@@ -275,14 +275,13 @@
             <br class="d-block d-lg-none"/>
             <br class="d-block d-lg-none"/>
             <audio id="gameAudio" src="jazz.mp3" loop></audio>
+            <span id="sound" style="display: none; word-wrap: break-word;" onclick="togglePlay(); $('#sound').toggle();">
+              <i class="fas fa-volume-mute"></i>
+            </span>
             <a onclick="togglePlay(); $('#sound').toggle();" href="#sound" class="mx-2 text-white-50">
               <i class="fa fa-trophy"></i>
-              <span id="sound" style="display: none; word-wrap: break-word;" onclick="togglePlay(); $('#sound').toggle();">
-                <i class="fas fa-volume-mute"></i>
-              </span>
               JoueR
             </a>
-            <br/>
             <script>
                 var myAudio = document.getElementById("gameAudio");
                 var isPlaying = false;
