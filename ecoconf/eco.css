@@ -4,6 +4,56 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
 
+ /* The Modal (background) */
+ .modal {
+   display: none; /* Hidden by default */
+   position: fixed; /* Stay in place */
+   z-index: 1; /* Sit on top */
+   left: 0;
+   top: 0;
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+   background-color: rgb(0,0,0); /* Fallback color */
+   background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+ }
+
+ /* Modal Content/Box */
+ .modal-content {
+   background-color: white;
+   margin: 20% auto; /* 15% from the top and centered */
+   padding: 10px;
+   border: 2px solid #38b335;
+   width: 100%; /* Could be more or less, depending on screen size */
+   max-width: 600px;
+ }
+
+ /* The Close Button */
+ .close {
+   /* color: #ffffff; */
+   /* float: center; */
+   text-align: right;
+   font-size: 16px;
+   font-weight: bold;
+   text-shadow: none;
+ }
+ .close:hover,
+ .close:focus {
+   color: #38b335;
+   text-decoration: none;
+   text-shadow: none;
+   cursor: pointer;
+ }
+
+#planet:hover,
+#btnCauses:hover,
+#btnActeurs:hover,
+#btnActions:hover {
+     opacity: 0.8;
+     cursor: pointer;
+ }
+
+
 #mainNav {
   min-height: 56px;
   background-color: #fff;
@@ -99,7 +149,7 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(21, 97, 19, 0.5) 0%, rgba(20, 80, 33, 0.3) 50%, rgb(12, 42, 11, 1) 100%), url("eco.jpg");
+  background: linear-gradient(to bottom, rgba(21, 97, 19, 0.5) 0%, rgba(7, 27, 11, 0.5) 50%, rgb(12, 42, 11, 1) 100%), url("eco.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
